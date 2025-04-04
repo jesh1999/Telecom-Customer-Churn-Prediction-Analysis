@@ -1,135 +1,142 @@
----
+---------------------------------------------------------------------------------------------------------------------------------
 
-# **📊 Telecom Customer Churn Prediction – Let’s Find Out Why Customers Leave! 🔍**
+# **📊 Telecom Customer Churn Prediction🔑 📈**
 
-## **🚀 Project Goal**
-We built a smart system to **predict which customers are likely to leave** a telecom company. Why? So the company can take action early, **keep their customers happy**, and reduce losses. 🛡️💡
-
----
-
-## **🔎 What We Explored – The Story in Data**
-
-### **1. 🔑 Churn Overview**
-We first checked **how many customers are leaving** vs staying.  
-📊 **Bar Chart**:  
-- One bar shows those who **left** ("Yes")  
-- One bar shows those who **stayed** ("No")  
-This gives us a clear picture of the churn situation.
+## 🧠 **Project Goal**
+The goal was simple but powerful: **predict which customers might leave** a telecom service. By doing this early, we can help companies act fast, offer better service, and keep their valuable customers longer. 💡💼
 
 ---
 
-### **2. 🚻 Churn by Gender**
-Do men or women leave more often?  
-📈 **Grouped bar chart** shows:  
-- Male vs Female  
-- Who stayed vs who left  
-📌 **Insight**: Helps tailor retention strategies based on gender.
+## 📚 **Overview**
+Customer churn is a major concern in the telecom world. In this project, we explored customer behavior using **visual analysis** and **machine learning** to predict who might leave the service next. Let’s break it down!
 
 ---
 
-### **3. 📝 Customer Contract Types**
-We explored **what kind of contracts customers have**:
-- Month-to-month  
-- One year  
-- Two years  
+## 🎯 **1. Churn Distribution**
+A simple bar chart that shows:
+- How many customers left (churned) ❌
+- How many stayed ✅
 
-🧾 Shorter contracts had higher churn. People with long-term contracts tend to stay!
+📊 ![Churn Distribution](https://github.com/user-attachments/assets/16e097e7-0157-4cd6-8da0-003ae65d351b)
 
----
-
-### **4. 💳 Payment Methods**
-Which payment methods are most used?
-- Electronic checks 📱
-- Mailed checks ✉️
-- Bank transfers 🏦
-- Credit cards 💳  
-
-👀 Most churn came from those using **electronic checks**.
+> This gives a quick view of the churn ratio in the entire customer base.
 
 ---
 
-### **5. 🌐 Internet Services**
-We checked customer preferences:
-- Fiber optic  
-- DSL  
-- No internet  
+## 👩‍🦰🧑 **2. Churn by Gender**
+Do men or women churn more?
 
-📊 Fiber optic users showed slightly higher churn. Interesting, right?
+📊 ![Gender vs Churn](https://github.com/user-attachments/assets/b5da748c-22d8-4488-88f6-76daa0c705cc)
 
----
-
-### **6. 👪 Dependents Distribution**
-Do customers with dependents leave more often?  
-- We grouped churn data by whether customers have dependents (like kids or parents).  
-✅ **Insight**: Customers with dependents tend to **stay longer**.
+> Shows how churn varies across gender.
 
 ---
 
-### **7. 🔐 Online Security**
-Does having online security matter?  
-🔍 Customers **without** online security services were more likely to churn.  
-This tells us that **security services add value!**
+## 📜 **3. Customer Contract Type**
+We checked which contract types customers are using:
+- Month-to-month
+- One year
+- Two year
+
+📊 ![Contract Types](https://github.com/user-attachments/assets/4e75e0e8-9217-4ece-9955-cd22d33492ef)
+
+> Month-to-month customers were more likely to churn.
 
 ---
 
-### **8. 🧓 Senior Citizens**
-Are senior citizens more likely to leave?
-📊 Yes – **churn was higher** among them.  
-Aging customers may need more support or better packages.
+## 💳 **4. Payment Methods**
+Who prefers what when paying?
+
+📊 ![Payment Methods](https://github.com/user-attachments/assets/a21dad03-8b53-48ee-82e6-b41e4761870d)
+
+> Electronic check users had the **highest churn rate**.
 
 ---
 
-### **9. 📩 Paperless Billing**
-How does billing method affect churn?  
-- Customers using **paperless billing** churned more.  
-🧠 Maybe they miss the physical reminder?
+## 🌐 **5. Internet Services**
+Let’s see the internet service type distribution.
+
+📊 ![Internet Services](https://github.com/user-attachments/assets/9bb56d9a-6ef4-486e-a81b-8ed1e722d6ea)
+
+> Fiber optic users showed **higher churn**.
 
 ---
 
-### **10. 🧑‍💻 Tech Support**
-Tech support seems to **keep people happy**.  
-- Customers with tech support churned **less**.  
-💡 Support = Satisfaction!
+## 👨‍👩‍👧 **6. Dependent Status**
+Do customers with dependents churn less?
+
+📊 ![Dependents](https://github.com/user-attachments/assets/5bd699ef-cdf3-4c8c-9fca-fbb40b08dfd8)
+
+> Customers with dependents tend to stay longer!
 
 ---
 
-### **11. 💸 Monthly Charges & Tenure**
-We looked at:
-- How long customers have stayed (Tenure)  
-- How much they pay (Monthly Charges)  
+## 🔐 **7. Online Security**
+Does online security affect churn?
 
-🧮 **Insight**: New customers paying **more** were more likely to churn.
+📊 ![Online Security](https://github.com/user-attachments/assets/32a29f5b-7bae-4738-ab87-44781a960449)
 
----
-
-## **🤖 Our Machine Learning Model – Does It Work?**
-
-We trained a model to predict churn and here’s how it performed:
-
-✅ **Accuracy**: **79%**  
-✅ **ROC AUC**: **0.84**
-
-📊 **Confusion Matrix**:
-- Correct predictions: 942 (No churn), 170 (Churn)  
-- Missed predictions: 94 (False churn), 203 (Missed churn)
-
-📋 **Classification Report**:
-- Precision (how accurate are the "churn" guesses?): 64%  
-- Recall (how many actual churners did we catch?): 46%  
-- F1-score (balance of both): 53%
+> Yes! Those without online security churn more.
 
 ---
 
-## **🌟 Key Takeaways**
-- Most customers churn **early** in their tenure  
-- **Month-to-month plans** and **electronic check users** churn more  
-- **Senior citizens** and those **without tech/security support** are at higher risk  
-- **Personalized retention plans** can make a big difference!
+## 👵 **8. Senior Citizens**
+Are older customers more likely to leave?
+
+📊 ![Senior Citizens](https://github.com/user-attachments/assets/14e8bbec-9bb6-433b-82eb-9dd65e65c1e5)
+
+> Churn is **higher among senior citizens**.
 
 ---
 
-## 🖼️ **Infographic Snapshot**
-![Click to View Infographic](https://files.chatgpt.com/file-00000000848851f6a6be0a242dacb75a)  
-> A visual summary of everything above, presented beautifully!
+## 🧾 **9. Paperless Billing**
+Paperless vs traditional billing — who churns more?
+
+📊 ![Paperless Billing](https://github.com/user-attachments/assets/e65420bd-fbcf-4ed9-b483-d9598d2741b3)
+
+> Customers using **paperless billing churn more**.
 
 ---
+
+## 🛠️ **10. Tech Support**
+Does having tech support reduce churn?
+
+📊 ![Tech Support](https://github.com/user-attachments/assets/0462391c-2bfa-41ad-9b4c-b798eb954e08)
+
+> Tech support plays a role in customer **retention**!
+
+---
+
+## 📈 **11. Monthly Charges & Tenure**
+We visualized:
+- How much people pay 💸
+- How long they've stayed ⏳
+
+📊 ![Monthly Charges](https://github.com/user-attachments/assets/e5ee24c6-8d4a-4a25-ab08-2e366b7d7b06)  
+📊 ![Tenure Distribution](https://github.com/user-attachments/assets/bb81d353-9e2d-4bf2-b1cc-850ac95717ee)
+
+> New customers paying **more** tend to churn more!
+
+---
+
+## 🧪 **Machine Learning Model Evaluation**
+We trained a model to **predict churn** and here’s how well it performed:
+
+| Metric              | Score   |
+|---------------------|---------|
+| ✅ Accuracy          | **0.79** |
+| 📊 ROC AUC          | **0.84** |
+| 📉 Precision (Churn) | **0.64** |
+| 🔍 Recall (Churn)    | **0.46** |
+| ⚖️ F1-score (Churn)  | **0.53** |
+
+🔢 **Confusion Matrix**  
+```
+[[942   94]
+ [203  170]]
+```
+
+> Our model gives a solid base to predict customer behavior and guide business decisions.
+
+---
+
